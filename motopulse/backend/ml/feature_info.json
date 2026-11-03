@@ -1,0 +1,78 @@
+{
+  "feature_names": [
+    "speed_kmh",
+    "longitudinal_accel",
+    "lateral_accel",
+    "gyro_magnitude",
+    "tilt_angle",
+    "braking_intensity",
+    "sudden_accel_magnitude",
+    "turning_intensity",
+    "speed_deviation",
+    "accel_variance"
+  ],
+  "feature_importances": {
+    "accel_variance": 0.2821305342627025,
+    "speed_kmh": 0.15873945600221173,
+    "speed_deviation": 0.1533804238005198,
+    "longitudinal_accel": 0.08245982921938104,
+    "sudden_accel_magnitude": 0.0736372443966733,
+    "gyro_magnitude": 0.06382292179393695,
+    "tilt_angle": 0.059942048252835445,
+    "braking_intensity": 0.047942522194209275,
+    "lateral_accel": 0.045930675930408504,
+    "turning_intensity": 0.0320143441471215
+  },
+  "accuracy": 0.9946666666666667,
+  "confusion_matrix": [
+    [
+      492,
+      8
+    ],
+    [
+      0,
+      1000
+    ]
+  ],
+  "n_training_samples": 4500,
+  "n_testing_samples": 1500,
+  "algorithm": "RandomForestClassifier",
+  "algorithm_comparison": [
+    {
+      "Algorithm": "Random Forest",
+      "Accuracy": 0.9933,
+      "Precision": 0.9901,
+      "Recall": 1.0,
+      "F1_Score": 0.995
+    },
+    {
+      "Algorithm": "Gradient Boosting",
+      "Accuracy": 0.9967,
+      "Precision": 0.996,
+      "Recall": 0.999,
+      "F1_Score": 0.9975
+    },
+    {
+      "Algorithm": "Decision Tree",
+      "Accuracy": 0.9833,
+      "Precision": 0.9851,
+      "Recall": 0.99,
+      "F1_Score": 0.9875
+    },
+    {
+      "Algorithm": "Support Vector Machine",
+      "Accuracy": 0.9933,
+      "Precision": 0.995,
+      "Recall": 0.995,
+      "F1_Score": 0.995
+    },
+    {
+      "Algorithm": "K-Nearest Neighbors",
+      "Accuracy": 0.9947,
+      "Precision": 0.996,
+      "Recall": 0.996,
+      "F1_Score": 0.996
+    }
+  ],
+  "data_disclaimer": "Baseline data modeled on real-world riding limits with a strict 75/25 Train/Test split. Pipeline successfully proves data ingestion and real-time processing capability."
+}
